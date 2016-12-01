@@ -1,0 +1,26 @@
+{
+  "title":"Équipe",
+
+  "intro":"Notre équipe est composée de freelances avec une forte volonté de faire bouger les choses !",
+
+  "table": {
+    "p1": {
+        "imgurl":"contents/images/equipe/p1.png",
+        "name":"Christine",
+        "jobtitle":"Freelance Redactrice Web",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis commodo libero, ac pulvinar metus fringilla vel. In hac habitasse platea dictumst. Mauris sagittis mi aliquam rutrum porttitor. Sed eu convallis urna. Duis dictum cursus risus."
+    },
+    "p2": {
+        "imgurl":"contents/images/equipe/p2.png",
+        "name":"Philipe",
+        "jobtitle":"Développeur - Consultant Freelance",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis commodo libero, ac pulvinar metus fringilla vel. In hac habitasse platea dictumst. Mauris sagittis mi aliquam rutrum porttitor. Sed eu convallis urna. Duis dictum cursus risus."
+    },
+    "p3": {
+        "imgurl":"contents/images/equipe/p3.png",
+        "name":"Edouard",
+        "jobtitle":"Développeur Front End Freelance",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis commodo libero, ac pulvinar metus fringilla vel. In hac habitasse platea dictumst. Mauris sagittis mi aliquam rutrum porttitor. Sed eu convallis urna. Duis dictum cursus risus."
+    }
+  }
+}

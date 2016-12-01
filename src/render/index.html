@@ -4,12 +4,12 @@
 <body ng-app="mutualab.org" class="home" chat-container>
   <nav>
     <div class="container-logo">
-      <p class="logo">{{= ui.logo }}</p>
+      <p class="logo"> <mark class="color-brand-grey">Réseau</mark>Freelance</p>
       <ul>
-        <a href="index.html" nav-to="#acceuil"><li>Acceuil</li></a>
-        <a href="index.html" nav-to="#vision"><li>Vision</li></a>
-        <a href="index.html" nav-to="#equipe"><li>Équipe</li></a>
-        <a href="index.html" nav-to="#inscription"><li>Inscription</li></a>
+        <a href="index.html" nav-to="#acceuil"><li>{{= ui.menu.home.label }}</li></a>
+        <a href="index.html" nav-to="#vision"><li>{{= ui.menu.vision.label }}</li></a>
+        <a href="index.html" nav-to="#equipe"><li>{{= ui.menu.equipe.label }}</li></a>
+        <a href="index.html" nav-to="#inscription"><li>{{= ui.menu.inscription.label }}</li></a>
       </ul>
     </div>
   </nav>
@@ -25,7 +25,7 @@
 
 
 
-  <section class="main-content">
+  <section id="vision" class="main-content">
     <article id="summary" class="summary-home invert" ui-scrollpoint>
       <div class="inner-section">
         <div class="container">
@@ -36,15 +36,14 @@
     
 
    
-    <article id="coworking" class="coworking-section view-section invert" ui-scrollpoint>
+    <article id="equipe" class="equipe-home view-section" ui-scrollpoint>
       <div class="inner-section">
         <div class="container">
-          <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
-            {{= contents.coworking }}
-          </div>
+            {% include "views/equipe.html" %}
         </div>
       </div>
     </article>
+
   </section>
 </body>
 {% endblock %}
