@@ -1,18 +1,10 @@
 @import "components/animations";
 @import "components/colors";
 @import "components/typography";
-@import "components/table";
 @import "components/nav";
 @import "components/header";
-@import "components/pricings";
 @import "components/layout";
-@import "components/summary";
-@import "components/socials";
-@import "components/footer";
-@import "components/calendar";
-@import "components/kwikchat";
 @import "components/booking-form";
-@import "components/modal-window";
 
 
 @import "pages/homepage";
@@ -40,7 +32,6 @@ a{
 
 h1{
   font-size:2em;
-  font-weight: 300;
   color:$gray;
   text-align:center;
 }
