@@ -5,30 +5,23 @@
           <ul>
               <li click-trigger>
                   <a href="index.html" nav-to="#coworking">
-                    <i class="picto" mt-svg src="images/icon-work.svg"></i>
                   </a>
-                  <h2>{{= ui.menu.work.label }}</h2>
-                  <p class="menu-description">
-                    {{= ui.menu.work.shortDescription|nl2br }}
-                  </p>
+                  <h2>{{= ui.menu.home.label }}</h2>
               </li>
               <li click-trigger>
-                  <a href="{{= ui.menu.rent.url }}">
-                    <i class="picto" mt-svg src="images/icon-rent.svg"></i>
+                  <a href="{{= ui.menu.vision.url }}">
                   </a>
-                  <h2>{{= ui.menu.rent.label }}</h2>
-                  <p class="menu-description">
-                    {{= ui.menu.rent.shortDescription|nl2br }}
-                  </p>
+                  <h2>{{= ui.menu.vision.label }}</h2>
               </li>
               <li click-trigger>
-                  <a href="{{= ui.menu.maker.url }}">
-                    <i class="picto" mt-svg src="images/icon-make.svg"></i>
+                  <a href="{{= ui.menu.equipe.url }}">
                   </a>
-                  <h2>{{= ui.menu.maker.label }}</h2>
-                  <p class="menu-description">
-                    {{= ui.menu.maker.shortDescription|nl2br }}
-                  </p>
+                  <h2>{{= ui.menu.equipe.label }}</h2>
+              </li>
+              <li click-trigger>
+                  <a href="{{= ui.menu.inscription.url }}">
+                  </a>
+                  <h2>{{= ui.menu.inscription.label }}</h2>
               </li>
             </ul>
                   {% include "views/nav-subitems.html" %}  

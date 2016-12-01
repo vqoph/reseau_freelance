@@ -17,10 +17,14 @@ header.main-header {
 
   .content-header{
     width:100%;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255,255,255,255);
     padding:40px 0; 
   }
 
+  .container-text-header {
+    width: 70%;
+    padding: 5vh 5vw;
+  }
 
   .background-header{
     top:-1%;
@@ -83,13 +87,29 @@ header.main-header {
 
   }
   h1{
-    text-align: center;
+    text-align: left;
     color:#444;
-    color:$gray;
+    color:$blue;
+  }
+  
+  h3 {
+    color: lighten($gray,50%);
   }
 
-  img,h1{
-    z-index:10;
+  button {
+    margin-top: 1.5em;
+    border: 2px solid $blue;
+    border-radius: 5px;
+    background-color: #FFF;
+    padding: 15px 30px;
+    color: $blue;
+    font-weight: 400;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: $blue;
+      color: #FFF;
+    }
   }
 
 }

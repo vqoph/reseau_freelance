@@ -3,27 +3,23 @@
 {% block body %}
 <body ng-app="mutualab.org" class="home" chat-container>
   <header class="main-header" >
-    <div class="content-header text-center">
-        <img class="logo" src="images/logo-mutualab.svg" title="{{= ui.header.logoTitle }}"/>
-        <h3>{{= ui.header.introHeader }}</h3>
+    <div class="content-header">
+      <div class="container-text-header">
+        <h1>{{= ui.header.introHeader }}</h1>
+        <h3>{{= ui.header.smallIntroHeader }}</h3>
+        <button>{{= ui.header.ctaHeader }}</button>
+      </div>
     </div>
-    <div class="background-header bg-anim"  style="background-image:{{ flk.backgroundOldImage }}"></div>
-    <div class="background-header" flickr-img search="mutualab" flk-model="flk" style="background-image:{{ flk.backgroundImage }}"></div>
-    <a class="author-infos" ng-show="flk.author" href="{{flk.author.profile}}" target="_blank">
-        <img ng-src="{{flk.author.pic}}" alt="Photo de {{flk.author.name}}">
-        <span>Photo de {{flk.author.name}}</span>
-    </a>
   </header>
+
 
 
   <section class="main-content">
      {% include "views/menu.html" %}
     <article id="summary" class="summary-home invert" ui-scrollpoint>
-      <div class="inner-section background-rotate">
+      <div class="inner-section">
         <div class="container">
-          <div class="col-lg-10 col-lg-offset-1">
            {% include "views/summary.html" %}
-          </div>
         </div>
       </div>
     </article>
@@ -31,7 +27,7 @@
 
    
     <article id="coworking" class="coworking-section view-section invert" ui-scrollpoint>
-      <div class="inner-section background-rotate">
+      <div class="inner-section">
         <div class="container">
           <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
             {{= contents.coworking }}
@@ -39,16 +35,6 @@
         </div>
       </div>
     </article>
-
-
-    <article id="pricing-coworking" class="pricing-section view-section">
-      <div class="container">
-        <div class="col-md-12">
-          {{= contents.pricings }}
-        </div>
-      </div>
-    </article>
   </section>
-  {% include "views/footer.html" %}
 </body>
 {% endblock %}

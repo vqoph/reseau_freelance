@@ -1,31 +1,30 @@
 {
-  "title":"Mutualāb - Espace de coworking, Salle de réunion et Maker space à Lille",
+  "title": "Réseau Freelance - Lille",
 
   "metaDescription":"Mutualāb est un vaste espace de travail partagé : 700 m2 en plein centre de Lille, pour travailler en mode collaboratif ou personnel.",
   
-  "header":{
-    "logoTitle":"Mutualāb - Espace de coworking, Salle de réunion et Maker space à Lille",
-    "introHeader":"Développez vos projets, rencontrez, échangez, faites germer vos idées…"
+  "header": {
+    "introHeader": "Freelance dans le web à Lille ? Une communauté s'organise pour avoir les mêmes avantages que les salariés !",
+    "smallIntroHeader": "Formations - Avantages de groupe - Apport d'affaires",
+    "ctaHeader": "J'adhère gratuitement !"
   },
 
   "menu":{
-    "work":{
-        "label":"Espace de coworking",
-        "url":"index.html",
-        "description":"Besoin d’un espace de travail ? Rien de plus simple : venez avec votre matériel, installez-vous où vous voulez, et connectez-vous. Sans engagement ni condition, vous travaillez comme bon vous semble ! \n\n Mutualāb est ouvert tous les jours de la semaine, de 9h à 19h.",
-        "shortDescription":"Besoin d’un espace de travail ? Rien de plus simple : venez avec votre matériel, installez-vous où vous voulez, et connectez-vous."
+    "home":{
+        "label":"Acceuil",
+        "url":"index.html"
     },
-    "rent":{
-      "label":"Salles de réunions",
-      "url":"salle-reunion-lille.html",
-      "description":"Présentations, événements, formations, réunions… Tout est possible ! \n\n Nos espaces sont modulables : recevez vos partenaires et partagez vos idées dans un cadre inspirant, convivial et innovant.",
-      "shortDescription":"Présentations, événements, formations, réunions… Tout est possible !"
+    "vision":{
+      "label":"Vision",
+      "url":"index.html"
     },
-    "maker":{
-      "label":"Maker space",
-      "url":"makerspace.html",
-      "description":"Mutualāb est un lieu ouvert d’innovation sociale. On y invente de nouvelles façons de travailler, de partager les idées et les savoir-faire. \n\n Chaque semaine, le jeudi soir, l’association LilleMakers vient mener ses expériences au sein du Makerspace.",
-      "shortDescription":"Mutualāb est un lieu ouvert d’innovation sociale. On y invente de nouvelles façons de travailler, de partager les idées et les savoir-faire. "
+    "equipe":{
+      "label":"Équipe",
+      "url":"index.html"
+    },
+    "inscription":{
+      "label":"Inscription",
+      "url":"index.html"
     },
     "subitems":[
       {"url":"restaurant-bis2fly.html", "label":"Restaurant le bis2fly"},
