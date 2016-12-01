@@ -99,7 +99,6 @@ header.main-header {
   button {
     margin-top: 1.5em;
     border: 2px solid $brand-gray;
-    border-radius: 5px;
     background-color: #FFF;
     padding: 15px 30px;
     color: $brand-gray;
@@ -107,9 +106,9 @@ header.main-header {
     transition: all 150ms ease-in-out;
 
     &:hover {
-      background-color: $yellow;
+      background-color: #000;
       color: #FFF;
-      border: 2px solid $yellow;
+      border: 2px solid #000;
     }
   }
 
@@ -153,35 +152,6 @@ header.page-header{
   img,h1{
     z-index:10;
     opacity:.95;
-  }
-
-
-  .inner-section{
-    padding-bottom:0;
-    transition:all 1s;
-
-    &.ui-scrollpoint:before{
-    transform: rotate(20deg);
-    }
-
-    &:before {  
-      opacity: .3;
-      animation-name:background-animation;
-      animation-duration:2s;
-      transform: rotate(10deg);
-      transition:all 1s;
-      background:url(../images/icon-make-white.svg) 80% -120px no-repeat;
-    }
-
-    &-blue{
-      background-color: lighten($blue, 15%);
-    }
-    &-orange{
-      background-color: lighten($orange, 15%);
-    }
-    &-green{
-      background-color: lighten($green, 15%);
-    }
   }
 }
 
