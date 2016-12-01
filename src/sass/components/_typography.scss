@@ -9,13 +9,12 @@
 
 h1,h2,h3,h4,h5,h6{
   font-family:$font-family-sans-serif;
-  font-weight: 700;
 }
 
 
 h1{
-  margin: 1.5em;
   font-size:2em;
+  font-weight: 700;
 }
 
 h2{
@@ -24,6 +23,7 @@ h2{
 
 h3{
   font-size:1.5em;
+  font-weight:400;
 }
 
 h4{
