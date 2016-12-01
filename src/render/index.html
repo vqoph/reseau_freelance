@@ -18,28 +18,32 @@
       <div class="container-text-header">
         <h1>{{= ui.header.introHeader }}</h1>
         <h3>{{= ui.header.smallIntroHeader }}</h3>
-        <button>{{= ui.header.ctaHeader }}</button>
+        <a href="index.html" nav-to="#inscription"><button>{{= ui.header.ctaHeader }}</button></a>
       </div>
     </div>
   </header>
 
-
-
   <section id="vision" class="main-content">
-    <article id="summary" class="summary-home invert" ui-scrollpoint>
+    <article id="vision" class="vision-home invert" ui-scrollpoint>
       <div class="inner-section">
         <div class="container">
-           {% include "views/summary.html" %}
+           {% include "views/vision.html" %}
         </div>
       </div>
     </article>
     
-
-   
-    <article id="equipe" class="equipe-home view-section" ui-scrollpoint>
+    <article id="equipe" class="equipe-home" ui-scrollpoint>
       <div class="inner-section">
         <div class="container">
             {% include "views/equipe.html" %}
+        </div>
+      </div>
+    </article>
+
+    <article id="inscription" class="inscription-home invert" ui-scrollpoint>
+      <div class="inner-section">
+        <div class="container">
+            {% include "views/inscription.html" %}
         </div>
       </div>
     </article>
