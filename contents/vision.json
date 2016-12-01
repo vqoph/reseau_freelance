@@ -1,0 +1,21 @@
+{
+  "intro":"Les freelances ont le droit aux mêmes avantages que les salariés : <br> Des droits à la formation, des prix de groupes sur les assurances, sur les mutuelles, et des places de ciné. Les freelances ont besoin d'un coup de main sur le commerce. <br><br> C'est pour ça que dans notre communauté, il y a aussi des apporteurs d'affaires. Le freelancing va devenir la norme dans le monde du web mais le cadre juridique d'un freelance est injuste.<br><br>On peut s'indigner, on peut aussi changer les choses et adhérer au changement.",
+
+  "table": {
+    "formation": {
+        "title":"Formations",
+        "subtitle":"<em>Des workshops de qualité animés par les freelancers</em>",
+        "desc":"L'objectif est de sortir de l'isolement les freelances. Certains ont la chance de travailler en équipe, peu ont la chance de partager leurs connaissances. Avec des workshop gratuits & accessibles à l'heure du midi ou en soirée, vous apprendrez ce que font les autres freelances de la communauté."
+    },
+    "affaire": {
+        "title":"Apport d'affaires",
+        "subtitle":"<em>Pour trouver de nouveaux challenges</em>",
+        "desc":"Dans le web, il y a plus d'entrepreneurs que de freelances. La communauté Réseau Freelance vous aide à trouver vos clients de demain."
+    },
+    "avantage": {
+        "title":"Avantages de groupe",
+        "subtitle":"<em>Pour tout le monde les mêmes droits</em>",
+        "desc":"Le Réseau Freelance va négocier pour vous des prix de groupe sur les assurances, dans les commerces, sur les services que vous utilisez, sur les places de ciné, des frais de courtages offerts pour trouver des financements professionnel ou personnel... Vous pourrez aussi négocier sur le prix des services que vous payez en vous servant du nombre de freelance de la communauté."
+    }
+  }
+}
