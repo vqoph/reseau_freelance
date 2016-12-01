@@ -1,0 +1,17 @@
+{
+  "title":"Inscription",
+
+  "intro":"Votre inscription nous aide a obtenir plus d'avantage.<br><br> C'est gratuit.",
+
+  "subintro":"<b>You</b> + <b>us</b> = <b>awesome</b>",
+
+  "form": {
+    "placeholder": {
+        "name": "Nom et prénom",
+        "mail": "Adresse mail",
+        "telephone": "Numéro de téléphone",
+        "message": "Vous êtes freelance en quoi ?"
+    },
+    "submit": "J'adhère !"
+  }
+}
