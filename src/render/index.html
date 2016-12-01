@@ -2,6 +2,17 @@
 
 {% block body %}
 <body ng-app="mutualab.org" class="home" chat-container>
+  <nav>
+    <div class="container-logo">
+      <p class="logo">{{= ui.logo }}</p>
+      <ul>
+        <a href="index.html" nav-to="#acceuil"><li>Acceuil</li></a>
+        <a href="index.html" nav-to="#vision"><li>Vision</li></a>
+        <a href="index.html" nav-to="#equipe"><li>Équipe</li></a>
+        <a href="index.html" nav-to="#inscription"><li>Inscription</li></a>
+      </ul>
+    </div>
+  </nav>
   <header class="main-header" >
     <div class="content-header">
       <div class="container-text-header">
@@ -15,7 +26,6 @@
 
 
   <section class="main-content">
-     {% include "views/menu.html" %}
     <article id="summary" class="summary-home invert" ui-scrollpoint>
       <div class="inner-section">
         <div class="container">
