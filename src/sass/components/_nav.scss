@@ -4,16 +4,14 @@
 */
 
 nav {
-  padding: 3vh 5vw 2vh 5vw;
-  background-color: #FFF;
-  position: fixed;
+  padding: 5vh 25vw 2vh 25vw;
   width: 100%;
 
   .logo {
     font-family: $font-family-sans-serif;
     font-size: 1.4em;
     font-weight: 700;
-    color: $blue;
+    color: $yellow;
     display:inline;
   }
 
@@ -23,12 +21,21 @@ nav {
 
     li {
       display: inline;
-      margin-right: 2vw;
-      color: $blue;
     }
   }
 
   a {
+    font-family: $font-family-sans-serif;
     text-decoration: none;
+    color: $brand-gray;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 1vh 2vw;
+
+
+    &:hover {
+      text-decoration: none;
+      color:$yellow;
+    }
   }
 }

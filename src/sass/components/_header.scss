@@ -89,26 +89,27 @@ header.main-header {
   h1{
     text-align: left;
     color:#444;
-    color:$blue;
+    color:$yellow;
   }
   
   h3 {
-    color: lighten($gray,50%);
+    color: $brand-gray;
   }
 
   button {
     margin-top: 1.5em;
-    border: 2px solid $blue;
+    border: 2px solid $brand-gray;
     border-radius: 5px;
     background-color: #FFF;
     padding: 15px 30px;
-    color: $blue;
+    color: $brand-gray;
     font-weight: 400;
     transition: all 150ms ease-in-out;
 
     &:hover {
-      background-color: $blue;
+      background-color: $yellow;
       color: #FFF;
+      border: 2px solid $yellow;
     }
   }
 
