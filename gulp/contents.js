@@ -162,44 +162,44 @@ module.exports = (config, bsync) => () => {
      * Dynamic pages system
      */
 
-    var defaultPageTemplate = fs.readFileSync(`${config.srcDir}/render/templates/page.html`,'utf-8');
-    contentMdPagesFiles.forEach((file) => {
-        var rawContent = fs.readFileSync(file,'utf-8');
+   //var defaultPageTemplate = fs.readFileSync(`${config.srcDir}/render/templates/page.html`,'utf-8');
+   //contentMdPagesFiles.forEach((file) => {
+   //    var rawContent = fs.readFileSync(file,'utf-8');
 
-        if(!fs.existsSync(config.tmpDir)) fs.mkdirSync(config.tmpDir);
+   //    if(!fs.existsSync(config.tmpDir)) fs.mkdirSync(config.tmpDir);
 
-        // extract front matter variable from content
-        metadata = frontMatter(rawContent);
-        rawContent = rawContent.replace( /^---([\s\S]*?)---$/m , '')
+   //    // extract front matter variable from content
+   //    metadata = frontMatter(rawContent);
+   //    rawContent = rawContent.replace( /^---([\s\S]*?)---$/m , '')
 
-        // allow components in markdown contents
-        markdownHtml =  marked(rawContent);
+   //    // allow components in markdown contents
+   //    markdownHtml =  marked(rawContent);
 
-        // Select existing page specific template
-        var pageTemplate = null;
-        var fileSlug = getName(file).filename
-        var targetFilename = `${fileSlug}.html`;
-        var templateFile = `${config.srcDir}/render/templates/${targetFilename}`;
-        if (!!fs.existsSync(templateFile)) { 
-          pageTemplate = fs.readFileSync(templateFile,'utf-8'); 
-        } else {
-          pageTemplate = defaultPageTemplate
-        }
+   //    // Select existing page specific template
+   //    var pageTemplate = null;
+   //    var fileSlug = getName(file).filename
+   //    var targetFilename = `${fileSlug}.html`;
+   //    var templateFile = `${config.srcDir}/render/templates/${targetFilename}`;
+   //    if (!!fs.existsSync(templateFile)) { 
+   //      pageTemplate = fs.readFileSync(templateFile,'utf-8'); 
+   //    } else {
+   //      pageTemplate = defaultPageTemplate
+   //    }
 
 
-        var parsed = njkEnv.renderString(componentsSystem(markdownHtml),cmsData);
-        cmsData.currentPage = {
-            content:parsed,
-            metadata:metadata.attributes,
-        }
-        content = njkEnv.renderString(pageTemplate, cmsData);
+   //    var parsed = njkEnv.renderString(componentsSystem(markdownHtml),cmsData);
+   //    cmsData.currentPage = {
+   //        content:parsed,
+   //        metadata:metadata.attributes,
+   //    }
+   //    content = njkEnv.renderString(pageTemplate, cmsData);
 
-        //fix prose.io render images
-        content = content.replace(/\{\{site.baseurl\}\}\/contents\//g, '');
+   //    //fix prose.io render images
+   //    content = content.replace(/\{\{site.baseurl\}\}\/contents\//g, '');
 
-        fs.writeFileSync(`./${config.tmpDir}/${targetFilename}` , content);
+   //    fs.writeFileSync(`./${config.tmpDir}/${targetFilename}` , content);
 
-    });
+   //});
     
     
 
