@@ -88,6 +88,7 @@
 
       textarea {
         width: 100%;
+        height: 15vh;
         border: 2px solid #FFF;
         background-color: $yellow;
         color: #FFF;
@@ -115,4 +116,43 @@
   }
 }
 
+@media (max-width: $screen-sm-min) {
+  .inscription-home {
+
+    .inscription-section {
+    display:block;
+    padding: 5vh 5vw;
+
+    .container-text{
+      width:100%;
+    }
+
+    p{
+      margin-top: 1em;
+      margin-bottom:3em;
+    }
+
+    .inscription-equation {
+      text-align: center;
+    }
+
+    form{
+      float:none;
+      margin: 0 auto;
+      width: 80%;
+      font-size:1.4em;
+    }
+   } 
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  .inscription-home {
+    .inscription-section{
+      form{
+        width: 90%;
+      }
+    }
+  }
+}
 

@@ -40,6 +40,7 @@
       list-style: none;
       display: flex;
       text-align: center;
+      padding-left:0px;
 
       li {
         width:30%;
@@ -52,6 +53,25 @@
         p {
           width: 100%;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .equipe-home {
+    .equipe-section {
+    
+      ul{
+        display:block;
+        li{
+          width:100%;
+          margin-bottom: 10vh;
+        }
+      }
+      p {
+        width: 100%;
       }
     }
   }

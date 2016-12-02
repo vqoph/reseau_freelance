@@ -4,7 +4,7 @@
 */
 
 nav {
-  padding: 5vh 25vw 2vh 25vw;
+  padding: 5vh 15vw 2vh 15vw;
   width: 100%;
 
   .logo {
@@ -31,11 +31,34 @@ nav {
     font-size: 1.2em;
     font-weight: 700;
     padding: 1vh 2vw;
-    transition: all 150ms ease-in-out;
+    transition: all 50ms ease-in-out;
 
     &:hover {
       text-decoration: none;
       color:$yellow;
+      border-bottom: 2px solid $yellow;
     }
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+
+  nav {
+    display:flex;
+    .logo{
+      font-size:2em;
+    }
+    .container-logo{
+      margin: 0 auto;
+    }
+    ul{
+      display:none;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  nav {
+    padding: 5vh 5vw 2vh 5vw;
   }
 }

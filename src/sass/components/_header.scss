@@ -8,11 +8,8 @@ header.main-header {
   &{
     position:relative;
     overflow: hidden;
-    min-height:20%;
-    padding:25% 0;
-    @media(min-width: 960px){
-      padding:9% 0;
-    }
+    width: 100%;
+    padding:10% 0;
   }
 
   .content-header{
@@ -24,6 +21,7 @@ header.main-header {
   .container-text-header {
     width: 70%;
     padding: 5vh 5vw;
+    float:left;
   }
 
   .background-header{
@@ -153,6 +151,29 @@ header.page-header{
     z-index:10;
     opacity:.95;
   }
+}
+
+@media (max-width: $screen-sm-min) {
+
+  header.main-header {
+    .container-text-header{
+      width: 90%;
+    }
+  }
+
+}
+
+@media (max-width: $screen-xs-min) {
+
+  header.main-header {
+    h1 {
+      font-size:2.5em;
+    }
+    .container-text-header{
+      width: 100%;
+    }
+  }
+  
 }
 
 
