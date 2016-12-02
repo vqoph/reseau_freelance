@@ -1,4 +1,4 @@
-<div class="inscription-section">
+<div class="inscription-section reveal">
   <div class="container-text">
     <h1 class="color-yellow">{{= inscription.title }}</h1>
     <p class="inscription-content">{{= inscription.intro }}</p>
@@ -7,10 +7,10 @@
 
   <div class="container-form">
     <form>
-        <input type="text" name="name" placeholder="{{= inscription.form.placeholder.name }}"><br>
-        <input type="text" name="mail" placeholder="{{= inscription.form.placeholder.mail }}"><br>
-        <input type="text" name="telephone" placeholder="{{= inscription.form.placeholder.telephone }}"><br>
-        <textarea class="message_form" type="text" name="message" placeholder="{{= inscription.form.placeholder.message }}"></textarea>
+        <input type="text" name="name" placeholder="{{= inscription.form.placeholder.name }}" required><br>
+        <input type="email" name="mail" placeholder="{{= inscription.form.placeholder.mail }}" required><br>
+        <input type="text" name="telephone" placeholder="{{= inscription.form.placeholder.telephone }}" required><br>
+        <textarea class="message_form" type="text" name="message" placeholder="{{= inscription.form.placeholder.message }}" required></textarea>
         <button type="submit">{{= inscription.form.submit }}</button> 
     </form>
     

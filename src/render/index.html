@@ -1,24 +1,24 @@
 {% extends "views/master.html" %}
 
 {% block body %}
-<body ng-app="mutualab.org" class="home" chat-container>
+<body ng-app="reseau_freelance" class="home" id="acceuil">
   <nav>
     <div class="container-logo">
       <p class="logo"> <mark class="color-brand-grey">Réseau</mark>Freelance</p>
       <ul>
-        <a href="index.html" nav-to="#acceuil"><li>{{= ui.menu.home.label }}</li></a>
-        <a href="index.html" nav-to="#vision"><li>{{= ui.menu.vision.label }}</li></a>
-        <a href="index.html" nav-to="#equipe"><li>{{= ui.menu.equipe.label }}</li></a>
-        <a href="index.html" nav-to="#inscription"><li>{{= ui.menu.inscription.label }}</li></a>
+        <a href="#acceuil" nav-to="#acceuil"><li>{{= ui.menu.home.label }}</li></a>
+        <a href="#vision" nav-to="#vision"><li>{{= ui.menu.vision.label }}</li></a>
+        <a href="#equipe" nav-to="#equipe"><li>{{= ui.menu.equipe.label }}</li></a>
+        <a href="#inscription" nav-to="#inscription"><li>{{= ui.menu.inscription.label }}</li></a>
       </ul>
     </div>
   </nav>
-  <header class="main-header" >
+  <header class="main-header reveal" >
     <div class="content-header">
       <div class="container-text-header">
         <h1>{{= ui.header.introHeader }}</h1>
         <h3>{{= ui.header.smallIntroHeader }}</h3>
-        <a href="index.html" nav-to="#inscription"><button>{{= ui.header.ctaHeader }}</button></a>
+        <a href="index.html" nav-to="#inscription"><button>{{= ui.header.ctaHeader }} </button></a>
       </div>
     </div>
   </header>
