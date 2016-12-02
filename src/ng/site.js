@@ -1,8 +1,5 @@
-var app = angular.module('mutualab.org',
-    ['config', 'templates','flickr-cover','ui.scrollpoint','chat-wrapper','booking-form']);
-
-
-
+var app = angular.module('reseau_freelance',
+    ['config', 'templates','ui.scrollpoint']);
 
 
 app.directive('mtSvg',[function(){
