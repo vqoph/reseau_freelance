@@ -92,6 +92,7 @@ header.main-header {
   
   h3 {
     color: $brand-gray;
+    margin-bottom: 1.5em;
   }
 
   button {
@@ -150,6 +151,72 @@ header.page-header{
   img,h1{
     z-index:10;
     opacity:.95;
+  }
+}
+
+/* Underline From Left // HOVER EFFECT */
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: $yellow;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+/* CTA STYLING */
+
+.svgArrow {
+  width: 54px;
+  height: 20px;
+  transform: translateY(.3em);
+  margin-left: 1em;
+}
+
+.ctaArrow {
+  fill:none;
+  stroke:$brand-gray;
+  stroke-miterlimit:10;
+  transition: all 150ms ease-in-out;
+}
+
+.ctaText {
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: $brand-gray;
+  padding-bottom: 10px;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: $yellow;
+
+    .ctaArrow {
+      stroke: $yellow;
+      transform: translateX(1em);
+    }
   }
 }
 

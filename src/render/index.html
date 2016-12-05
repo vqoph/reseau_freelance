@@ -6,10 +6,10 @@
     <div class="container-logo">
       <p class="logo"> <mark class="color-brand-grey">Réseau</mark>Freelance</p>
       <ul>
-        <a href="#acceuil" nav-to="#acceuil"><li>{{= ui.menu.home.label }}</li></a>
-        <a href="#vision" nav-to="#vision"><li>{{= ui.menu.vision.label }}</li></a>
-        <a href="#equipe" nav-to="#equipe"><li>{{= ui.menu.equipe.label }}</li></a>
-        <a href="#inscription" nav-to="#inscription"><li>{{= ui.menu.inscription.label }}</li></a>
+        <a href="#acceuil" nav-to="#acceuil" class="hvr-underline-from-left"><li>{{= ui.menu.home.label }}</li></a>
+        <a href="#vision" nav-to="#vision" class="hvr-underline-from-left"><li>{{= ui.menu.vision.label }}</li></a>
+        <a href="#equipe" nav-to="#equipe" class="hvr-underline-from-left"><li>{{= ui.menu.equipe.label }}</li></a>
+        <a href="#inscription" nav-to="#inscription" class="hvr-underline-from-left"><li>{{= ui.menu.inscription.label }}</li></a>
       </ul>
     </div>
   </nav>
@@ -18,7 +18,7 @@
       <div class="container-text-header">
         <h1>{{= ui.header.introHeader }}</h1>
         <h3>{{= ui.header.smallIntroHeader }}</h3>
-        <a href="index.html" nav-to="#inscription"><button>{{= ui.header.ctaHeader }} </button></a>
+        <a href="#inscription" class="ctaText hvr-underline-from-left" nav-to="#inscription">{{= ui.header.ctaHeader }}<svg class="svgArrow"><path d="M.7 9H36M29 17.8L36 9 29 .6" class="ctaArrow"/></svg></a>
       </div>
     </div>
   </header>
