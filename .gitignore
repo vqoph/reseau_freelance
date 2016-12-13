@@ -5,9 +5,6 @@ dist
 .tmp
 .env
 
-.flickrApiKey
 *.map
 *.sublime-*
 *.log
-!mutualab.sublime-project
-src/fonts/multicolore/specimen_files
