@@ -11,7 +11,7 @@ nav {
     font-family: $font-family-sans-serif;
     font-size: 1.4em;
     font-weight: 700;
-    color: $yellow;
+    color: $red;
     display:inline;
   }
 
@@ -35,7 +35,7 @@ nav {
 
     &:hover {
       text-decoration: none;
-      color:$yellow;
+      color:$red;
     }
   }
 }
@@ -58,7 +58,7 @@ nav {
   left: 0;
   right: 100%;
   bottom: 0;
-  background: $yellow;
+  background: $red;
   height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -75,8 +75,8 @@ nav {
 
   nav {
     display:flex;
-    .logo{
-      font-size:2em;
+    .logo_svg{
+      width:90%;
     }
     .container-logo{
       margin: 0 auto;

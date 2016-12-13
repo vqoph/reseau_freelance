@@ -3,6 +3,10 @@
 /**
  * Header on home page
  */
+
+ .logo_svg {
+    width: 20%;
+  }
  
 header.main-header {
   &{
@@ -71,6 +75,8 @@ header.main-header {
     }
   }
 
+
+
   img.logo{
     width : 40%;
     margin:0 auto;
@@ -87,7 +93,7 @@ header.main-header {
   h1{
     text-align: left;
     color:#444;
-    color:$yellow;
+    color:$red;
   }
   
   h3 {
@@ -111,6 +117,13 @@ header.main-header {
     }
   }
 
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 0vh;
+  height: 15vh;
+  left: calc(50%-50px);
 }
 
 
@@ -172,7 +185,7 @@ header.page-header{
   left: 0;
   right: 100%;
   bottom: 0;
-  background: $yellow;
+  background: $red;
   height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -211,10 +224,10 @@ header.page-header{
 
   &:hover {
     text-decoration: none;
-    color: $yellow;
+    color: $red;
 
     .ctaArrow {
-      stroke: $yellow;
+      stroke: $red;
       transform: translateX(1em);
     }
   }
